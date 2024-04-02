@@ -10,10 +10,9 @@ package com.mycompany.shapes;
  */
 public class Rectangle extends Shapes{
     private double l,w;
-    private String color;
 
     public Rectangle(int l, int w, String color) {
-        this.color = color;
+        super(color);
         this.l = l;
         this.w = w;
     }
@@ -30,7 +29,7 @@ public class Rectangle extends Shapes{
 
     @Override
     public String toString() {
-        return "Length: " + l + "\nWidth: "+ w +"\nArea: " + calArea() + "\nColor: " + color;
+        return "Length: " + l + "\nWidth: "+ w +"\nArea: " + calArea() + "\nColor: " + super.toString();
     }
     
     

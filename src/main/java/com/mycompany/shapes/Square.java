@@ -11,10 +11,9 @@ package com.mycompany.shapes;
 public class Square extends Shapes {
     
     private double side;
-    private String color;
 
     public Square(double side, String color) {
-        this.color = color;
+        super(color);
         this.side = side;
     }
 
@@ -29,7 +28,7 @@ public class Square extends Shapes {
 
     @Override
     public String toString() {
-        return "Side: "+ side + "\nArea: " + calArea() + "\nColor: " + color;
+        return "Side: "+ side + "\nArea: " + calArea() + "\nColor: " + super.toString();
     }
     
     

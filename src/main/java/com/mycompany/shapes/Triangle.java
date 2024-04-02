@@ -10,10 +10,9 @@ package com.mycompany.shapes;
  */
 public class Triangle extends Shapes{
     private double base, height;
-    private String color;
 
     public Triangle(double base, double height, String color) {
-        this.color = color;
+        super(color);
         this.base = base;
         this.height = height;
         this.color = color;
@@ -32,7 +31,7 @@ public class Triangle extends Shapes{
 
     @Override
     public String toString() {
-        return "Base: " + base + "\nHeight: " + height + "\nArea: " + calArea() + "\nColor: " + color;
+        return "Base: " + base + "\nHeight: " + height + "\nArea: " + calArea() + "\nColor: " + super.toString();
     }
     
     

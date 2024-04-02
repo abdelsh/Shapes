@@ -10,16 +10,16 @@ package com.mycompany.shapes;
  */
 public abstract class Shapes {
 
-//    public  String color();
+    public String color;
 
-//    public Shapes(String color) {
-//        this.color = color;
-//    }
+    public Shapes(String color) {
+        this.color = color;
+    }
 
     @Override
     public String toString() {
-//        return "Shapes{" + "color=" + color + '}';
-        return "";
+        return  color;
+//        return "";
     }
 
     public abstract double calArea();

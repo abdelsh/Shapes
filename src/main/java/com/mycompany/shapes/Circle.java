@@ -12,13 +12,12 @@ public class Circle extends Shapes {
 
     private double r;
     private int x,y;
-    private String color;
     
     
     
 
     public Circle(double r, int x, int y, String color) {
-        this.color = color;
+        super(color);
         this.r = r;
         this.x = x;
         this.y = y;
@@ -40,6 +39,6 @@ public class Circle extends Shapes {
     
     @Override
     public String toString() {
-        return "Redius: " + r + "\n(" + x + ", " + y + ")\nArea: " + calArea() +"\nColor: " + color ;
+        return "Redius: " + r + "\n(" + x + ", " + y + ")\nArea: " + calArea() +"\nColor: " + super.toString() ;
     }
 }
